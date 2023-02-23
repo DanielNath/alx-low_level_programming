@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - A programm that determines if a num is -ve or +ve
  *
@@ -13,18 +14,12 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	scanf("%d\n", &n);
-
-		if (n < 0);
-		printf("%d\n, 'n', is positive");
-
-		esle if (n == 0);
-		printf("%d\n, 'n', is zero ");
-
-		esle
-		printf("%d\n, 'n' is negative");
-
-		return (0);
+	scanf("%d", &n);
+	if (n > 0)
+	printf("%d is positive \n", n);
+	else if (n == 0)
+	printf("%d is zero \n", n);
+	else
+	printf("%d is negatie \n", n);
+	return (0);
 }
-
